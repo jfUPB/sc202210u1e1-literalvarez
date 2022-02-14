@@ -7,10 +7,14 @@
     D=M
     @1
     M=-1
-(LOOP READ)
+(VARIABLES)
+    @67
+    M=A
+    D=M
     @70
     M=A
     D=M
+(SALTO A F)  
     @24576
     D=D-M
     @4
@@ -31,10 +35,38 @@
         M=D 
         @24575
         D=M+1
-        @16
+        @19
         D;JGT
-            @0
+            @33
             0;JMP
+(lOOP C) 
+    @67
+    M=A
+    D=M
+    @24576
+    D=D-M
+    @33
+    D;JNE
+    @16384
+    D=A
+    M=1
+    @4
+    M=D
+    
+        @4
+        D=M
+        @1
+        D=D-M
+        A=D
+        M=0
+        @4
+        M=D 
+        @24575
+        D=M
+        @45
+        D;JLT
+            @0
+            0;JMP           
 
     
 
