@@ -1,13 +1,14 @@
-// Tomas lvarez rtinez
+// Tomas alvarez Martinez
 // 000396822
 // tomas1alvares@gmail.com
 
 (START)
     @START
     D=M
+    
+(VARIABLES)
     @1
     M=-1
-(VARIABLES)
     @67
     M=A
     D=M
@@ -20,7 +21,7 @@
     @4
     D;JNE
 (LOOP F)
-    @16384
+    @16383
     D=A
     M=-1
     @3
@@ -47,7 +48,7 @@
     D=D-M
     @33
     D;JNE
-    @16384
+    @16383
     D=A
     M=1
     @4
